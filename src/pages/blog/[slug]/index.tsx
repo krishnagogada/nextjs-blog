@@ -12,6 +12,8 @@ export const getServerSideProps = async (ctx: any) => {
     sort: "properties.date",
   });
 
+  console.log(posts, ">>>posts<<<");
+
   const post = posts.items?.find((post: any) => post.fields.slug === slug);
 
   return {

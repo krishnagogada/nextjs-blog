@@ -10,6 +10,7 @@ export const getServerSideProps = async () => {
     languageCode: "en-us",
     sort: "properties.date",
   });
+  console.log(posts, ">>>From server side<<<");
   return {
     props: {
       posts: posts.items,
